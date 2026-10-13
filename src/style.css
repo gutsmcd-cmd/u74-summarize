@@ -1,0 +1,28 @@
+:root{--bg:#0b0f1f;--sheet:#121833;--ink:#e9ecff;--muted:#a4abd6;--line:#2c3566;--cy:#5ef2ff;--vi:#b78cff;--pk:#ff7ad9;
+font-family:system-ui,"Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:var(--bg);color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(800px 400px at 90% -10%,#3b1d6e55,transparent),var(--bg);min-height:100vh}
+main{max-width:760px;margin:0 auto;padding:16px 16px 60px}
+a{color:var(--cy)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:.85rem}
+h1{margin:.6rem 0 0;font-size:2rem;background:linear-gradient(90deg,var(--cy),var(--vi),var(--pk));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{margin:.2rem 0 1rem;color:var(--muted)}
+.card{background:var(--sheet);border:1px solid var(--line);border-radius:16px;padding:14px;margin:12px 0}
+label.file{display:block;border:2px dashed var(--line);border-radius:14px;padding:18px;text-align:center;cursor:pointer}
+label.file:hover,label.file.over{border-color:var(--cy)}
+input[type=file]{display:none}
+textarea{width:100%;min-height:140px;background:#0b0f1f;color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:10px;font:inherit}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}
+.row>span{min-width:7.5em;color:var(--muted);font-size:.9rem}
+.chip{border:1px solid var(--line);border-radius:999px;padding:.45rem .85rem;background:none;color:var(--ink);font:inherit;cursor:pointer}
+.chip[aria-pressed=true]{border-color:var(--cy);background:#5ef2ff1f}
+select,input[type=password]{background:#0b0f1f;color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:.45rem;font:inherit;max-width:100%}
+.go{font:inherit;font-weight:700;border:0;border-radius:999px;padding:.75rem 1.4rem;cursor:pointer;color:#0b0f1f;background:linear-gradient(90deg,var(--cy),var(--vi))}
+.go:disabled{opacity:.5}
+.ghost{font:inherit;border:1px solid var(--line);border-radius:999px;padding:.55rem 1rem;background:none;color:var(--ink);cursor:pointer}
+progress{width:100%;height:10px;accent-color:var(--cy)}
+.status{color:var(--muted);font-size:.9rem;min-height:1.3em}
+.out{white-space:pre-wrap;line-height:1.7;min-height:3em}
+.note{color:var(--muted);font-size:.85rem;line-height:1.6}
+details summary{cursor:pointer}
+.err{color:#ff9a9a}
