@@ -1,0 +1,23 @@
+{
+  "name": "u74-summarize",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "まとめ屋 / Summarizer — Universe 74. In-browser AI summaries of PDFs, EPUBs and text.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "3.7.6",
+    "jszip": "3.10.1",
+    "pdfjs-dist": "4.10.38"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vite": "6.4.3",
+    "vite-plugin-pwa": "0.21.2"
+  }
+}
